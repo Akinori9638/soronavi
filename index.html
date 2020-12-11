@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- レスポンシブ対応 -->
+    <title>一人でも入りやすい店検索サイト　ソロナビ</title>
+    <link rel="stylesheet" href="/css/stylesheet.min.css">
+    <link rel="stylesheet" href="/css/cardtype.min.css">
+    <link rel="stylesheet" href="/css/responsive.min.css"><!-- レスポンシブ対応 -->
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">　<!--　slick読込 -->
+    <link rel="stylesheet" type="text/css" href="/css/slick.css">　<!--　slick読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>　<!-- jquery 読込 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- ページ周り余白カットのため -->
+    <div class="wrap">
+
+     <header >
+       <!-- header left -->
+      <div class="header-left">
+  				<a href="/"><i class="fas fa-coffee"></i>ソロナビ</a>
+      </div>
+      <!-- header right -->
+      <div class="header-right">
+        <a href="/about">about</a>
+        <a href="/contact">contact</a>
+
+      </div>
+      <!-- header レスポンシブ時 -->
+      <div id="menu-icon">
+        <span class="fa fa-bars"></span>
+        <div class="header-menu">
+          <a href="/about">about</a>
+          <a href="/contact">contact</a>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- 👇メイン -->
+    <main>
+
+      <!-- ページメインの写真 -->
+      <div class="header-image">
+        <div class="header-image-text">
+          <h2 id="page-title">You can enjoy yourself as well</h2>
+          <p>こっそり一人で入れるお店を探してみませんか？</p>
+          <a href="/about"><i class="fas fa-coffee"></i>ソロナビ</a>
+        </div>
+      </div>
+
+
+      <!-- メイン内容 -->
+      <div id="contents">
+
+        <div id="main-contents">
+          <!-- レスポンシブ時出現　スライダー -->
+          <ul id="slider">
+
+              <li class="slider_article">
+                <a class="cardtype-link" href="/shop1">
+                <img src="/images/shop1/shop-img-1.jpg">
+                <div class="cardtype__article-info">
+                  <h2>【神奈川 川崎】<br />ごはんカフェ　chawan</h2>
+                </div>
+                </a>
+              </li>
+
+              <li class="slider_article">
+                <a class="cardtype-link" href="/shop2">
+                <img src="/images/shop2/shop-img-1.jpg">
+                <div class="cardtype__article-info">
+                  <h2>【東京 世田谷】<br />麺屋　十王</h2>
+                </div>
+                </a>
+              </li>
+
+              <li class="slider_article">
+                <a class="cardtype-link" href="/shop10">
+                <img src="/images/shop10/shop-img-1.jpg">
+                <div class="cardtype__article-info">
+                  <h2>【東京 綾瀬】<br />かあちゃん</h2>
+                </div>
+                </a>
+              </li>
+
+              <li class="slider_article">
+                <a class="cardtype-link" href="/shop5">
+                <img src="/images/shop5/shop-img-1.jpg">
+                <div class="cardtype__article-info">
+                  <h2>【大阪 梅田】<br />ごはんカフェ　chawan</h2>
+                </div>
+                </a>
+              </li>
+
+          </ul>
+
+          <!-- カード形式紹介 -->
+          <div class="cardtype">
+            <article class="cardtype-article">
+                  <a class="cardtype-link" href="/shop1">
+                  <img src="/images/shop1/shop-img-1.jpg">
+                  <div class="cardtype__article-info">
+                    <h2>【神奈川 川崎】<br />ごはんカフェ　chawan</h2>
+                  </div>
+                  </a>
+            </article>
+
+            <article class="cardtype-article">
+                  <a class="cardtype-link" href="/shop2">
+                  <img src="/images/shop2/shop-img-1.jpg">
+                  <div class="cardtype__article-info">
+                    <h2>【東京 世田谷】<br />麺屋　十王</h2>
+                  </div>
+                  </a>
+            </article>
+
+            <article class="cardtype-article">
+                  <a class="cardtype-link" href="/shop10">
+                  <img src="/images/shop10/shop-img-1.jpg">
+                  <div class="cardtype__article-info">
+                    <h2>【東京 綾瀬】<br />かあちゃん</h2>
+                  </div>
+                  </a>
+            </article>
+
+            <article class="cardtype-article">
+                  <a class="cardtype-link" href="/shop5">
+                  <img src="/images/shop5/shop-img-1.jpg">
+                  <div class="cardtype__article-info">
+                    <h2>【大阪 梅田】<br />うどん　しのぶ庵</h2>
+                  </div>
+                  </a>
+            </article>
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+        <!-- サイドバー　 -->
+        <div id="side-var">
+          <!--　ジャンル検索 -->
+         <div id="types" class="widget widget_categories"><h4 class="widgettitle">ジャンルから探す</h4>
+           <ul class="parents">
+             <li class="cat-item-1"><a href="/results/type/udon.ejs">うどん</a></li>
+             <li class="cat-item-1"><a href="/results/type/teisyoku.ejs">定食</a></li>
+             <li class="cat-item-1"><a href="/results/type/ra-men.ejs">ラーメン</a></li>
+
+           </ul>
+         </div>
+         <!--　エリア検索 -->
+         <div id="categories" class="widget widget_categories"><h4 class="widgettitle">エリアから探す</h4>
+      		 <ul class="parents">
+
+
+             <li class="cat-item-1"><a href="/results/prefecture/kanagawa.ejs">神奈川</a>
+               <i class="fas fa-angle-down"></i>
+               <ul class="children">
+                 <li class="cat-item-2"><a href="/results/area/kawasaki.ejs">川崎</a></li>
+               </ul>
+             </li>
+             <li class="cat-item-1"><a href="/results/prefecture/tokyo.ejs">東京</a>
+               <i class="fas fa-angle-down"></i>
+               <ul class="children">
+
+                 <li class="cat-item-2"><a href="/results/area/setagaya.ejs">世田谷</a></li>
+                 <li class="cat-item-2"><a href="/results/area/ayase.ejs">綾瀬</a></li>
+
+               </ul>
+             </li>
+             <li class="cat-item-1"><a href="/results/prefecture/osaka.ejs">大阪</a>
+               <i class="fas fa-angle-down"></i>
+               <ul class="children">
+                 <li class="cat-item-2"><a href="/results/area/umeda.ejs">梅田</a></li>
+               </ul>
+             </li>
+
+           </ul>
+
+        </div>
+      </div>
+     </div>
+    </main>
+
+    <!--　👇フッター -->
+    <footer>
+
+      <!--　ページ内トップへ行くボタン -->
+      <div id="top-link">
+        <a href="#" id="top-link-btn">TOP</a>
+      </div>
+
+      <!--　各種リンク　-->
+      <div id="footer-menu">
+					<div >
+            <a href="/" class=home-link><i class="fa fa-home fa-lg"></i> HOME</a>
+					</div>
+					<nav>
+						<div class="page-links">
+
+                <a href="/about">about</a>
+                <a href="/contact">contact</a>
+
+            </div>
+
+          </nav>
+					<p class="copyright">一人でも入りやすいお店検索サイト　<i class="fas fa-coffee"></i>ソロナビ</p>
+				</div>
+    </footer>
+
+  </div>
+
+  　<!--
+  　　<!-- javascript読込 -->
+    <script type="text/javascript" src="/javascript/slick.min.js"></script>
+  　<script src="javascript/script.js"></script>
+
+  </body>
+</html>
